@@ -29,9 +29,9 @@ export default function Layout() {
       </header>
 
       <nav className="navbar" style={{ padding: 8, borderBottom: '1px solid var(--text)' }}>
-        <NavLink to="/"       style={({ isActive }) => ({ marginRight: 12, color: isActive ? 'blue' : 'var(--text)' })}>Home</NavLink>
-        <NavLink to="/about"  style={({ isActive }) => ({ marginRight: 12, color: isActive ? 'blue' : 'var(--text)' })}>About</NavLink>
-        <NavLink to="/contact"style={({ isActive }) => ({ color: isActive ? 'blue' : 'var(--text)' })}>Contact</NavLink>
+        <NavLink to="/"        className={"nav-link"}  style={({ isActive }) => ({ marginRight: 12, color: isActive ? 'blue' : 'var(--text)' })}>Home</NavLink>
+        <NavLink to="/about"   className={"nav-link"}  style={({ isActive }) => ({ marginRight: 12, color: isActive ? 'blue' : 'var(--text)' })}>About</NavLink>
+        <NavLink to="/contact" className={"nav-link"}  style={({ isActive }) => ({ color: isActive ? 'blue' : 'var(--text)' })}>Contact</NavLink>
       </nav>
 
       <main style={{ padding: 16 }}>
