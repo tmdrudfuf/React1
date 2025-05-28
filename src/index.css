@@ -12,6 +12,22 @@
   --footer-bg: #1e1e1e;
 }
 
+.navbar {
+  padding: 8px;
+  border-bottom: 1px solid var(--text);
+  background: var(--header-bg);
+  transform: translateY(-100%);
+  opacity: 0;
+  animation: slideDown 0.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 body {
   background-color: var(--bg);
   color: var(--text);

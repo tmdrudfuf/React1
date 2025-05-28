@@ -28,7 +28,7 @@ export default function Layout() {
         </button>
       </header>
 
-      <nav style={{ padding: 8, borderBottom: '1px solid var(--text)' }}>
+      <nav className="navbar" style={{ padding: 8, borderBottom: '1px solid var(--text)' }}>
         <NavLink to="/"       style={({ isActive }) => ({ marginRight: 12, color: isActive ? 'blue' : 'var(--text)' })}>Home</NavLink>
         <NavLink to="/about"  style={({ isActive }) => ({ marginRight: 12, color: isActive ? 'blue' : 'var(--text)' })}>About</NavLink>
         <NavLink to="/contact"style={({ isActive }) => ({ color: isActive ? 'blue' : 'var(--text)' })}>Contact</NavLink>
